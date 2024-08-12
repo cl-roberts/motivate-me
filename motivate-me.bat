@@ -22,9 +22,10 @@ echo did not understand option %1
 goto :help
 
 :help
-echo -m --motivate: just do it
-echo -s --success: cheering baby
-echo -f --failure: falling child
+echo options:
+echo    -m --motivate   just do it
+echo    -s --success    cheering baby
+echo    -f --failure    falling child
 exit /b 
 
 :just-do-it
@@ -46,5 +47,5 @@ timeout /t 5 /nobreak > NUL
 goto :terminate
 
 :terminate
-taskkill /f /fi "ImageName eq PhotosApp.exe" /fi "Status eq Running" 1>nul 2>&1
+taskkill /f /fi "ImageName eq Photo*" /fi "Status eq Running" 1>nul 2>&1
 exit /b 
