@@ -17,9 +17,17 @@ motivate-me
 
 Alternatively, use the `-s` flag if you need to celebrate a success,
 
+```cmd
+motivate-me -s
+```
+
 ![](cheering-baby.gif)
 
 or the `-f` flag to come to terms with your failures.
+
+```cmd
+motivate-me -f
+```
 
 ![](falling-child.gif)
 
